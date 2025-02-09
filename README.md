@@ -15,24 +15,20 @@ A **Power BI dashboard** was designed to help stakeholders make data-driven deci
 
 ## 📊 Dashboard Preview  
 ![fullscreensalesimage1](https://github.com/user-attachments/assets/e4c2d35b-0a46-4ffa-a1aa-5e289e5e13e1)
-![fullscreensalesimage2](https://github.com/user-attachments/assets/96f8f133-9a31-487f-bd3a-ff51c9988595)
-
-
-
-## 📂 Project Structure  
-- **Data/** → Raw and processed datasets  
-- **SQL/** → Queries for data analysis  
-- **Dashboard/** → Power BI `.pbix` file  
-- **Images/** → Screenshots of visualizations  
-- **Documentation/** → Detailed project report  
+![fullscreensalesimage2](https://github.com/user-attachments/assets/96f8f133-9a31-487f-bd3a-ff51c9988595)  
 
 ## 🔍 SQL Queries  
 Some of the SQL queries used for data analysis:  
 
 ```sql
--- Monthly Sales Trend
-SELECT MONTH(sales_date) AS Month, SUM(sales_amount) AS Total_Sales
-FROM sales_data
-GROUP BY MONTH(sales_date)
-ORDER BY Month;
+--- Date Table
+SELECT * FROM sales.date;
+select sales.transactions.*,sales.date.*from sales.transactions inner join sales.date on sales.transactions.order_date=
+sales.date.date where sales.date.year=2020;
+select sum(sales.transactions.sales_amount) as totalsales_2020 from sales.transactions inner join sales.date on sales.transactions.order_date=
+sales.date.date where sales.date.year=2020 and sale.transactions.market_code='Mark001';
+--- Transactions Table
+select * from sales.transactions;
+select * from sales.transactions where sales_amount<=5000;
+SELECT *  FROM sales.transactions where market_code='Mark001'; 
 
