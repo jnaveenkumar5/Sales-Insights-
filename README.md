@@ -1,4 +1,4 @@
-# 📊 Sales Insights – Brick & Mortar Business (Power BI | SQL)
+# 📊 Sales Insights – Brick & Motor Business (Power BI | SQL)
 
 ## 🚀 Project Overview  
 This project focuses on analyzing sales trends for **AtliQ Hardware**, a brick-and-mortar business.  
