@@ -46,7 +46,7 @@ sales.date.date where sales.date.year=2020 and sale.transactions.market_code='Ma
 select * from sales.transactions;
 select * from sales.transactions where sales_amount<=5000;
 SELECT *  FROM sales.transactions where market_code='Mark001';
----
+```
 ## 📜 Conclusion  
 This Power BI dashboard provides **actionable insights** into AtliQ Hardware’s sales trends, helping leadership make **data-driven decisions** to drive business growth.  
 
