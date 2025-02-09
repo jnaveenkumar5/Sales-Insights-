@@ -1,5 +1,5 @@
 # Project Title
-# Sales-Insights-Brick and Motor business[Power BI | SQL] 
+## Sales-Insights-Brick and Motor business[Power BI | SQL] 
 # Description
 • Designed a Power BI dashboard to understand AtliQ hardware goods sales trend. 
 • The final dashboard was effective at displaying the sales trend of AtliQ hardware, allowing users to understand the data and make informed decisions.
